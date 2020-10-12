@@ -79,7 +79,7 @@ console.log(`El numero total es ${suma} y se sumaron ${contador} numeros`); */
 
 // 7 - Crea 3 arrays. El primero tendra 5 números y el segundo se llamará pares y el tercero impares, ambos estarán vacíos. Después multiplica cada uno de los números del primer array por un número aleatorio entre 1 y 10, si el resultado es par guarda ese número en el array de pares y si es impar en el array de impares. Muestra por consola: -la multiplicación que se produce junto con su resultado con el formato 2 x 3 = 6 -el array de pares e
 
-let numeros = [3, 5, 9, 2, 12];
+/* let numeros = [3, 5, 9, 2, 12];
 let pares = [];
 let impares = [];
 let resultado;
@@ -95,11 +95,85 @@ for (i = 0; i < 5; i++) {
 }
 
 console.log(`Numeros pares: ${pares}`);
-console.log(`Numeros impares: ${impares}`);
+console.log(`Numeros impares: ${impares}`); */
+
 // 8 - Dado un array de letras, solicita un número de DNI y calcula que letra le corresponde. El número no puede ser negativo ni tener más de 8 dígitos. La posición de la letra es el resultado del módulo del número introducido entre 23
 
 // const letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
+/* const letras = [
+  'T',
+  'R',
+  'W',
+  'A',
+  'G',
+  'M',
+  'Y',
+  'F',
+  'P',
+  'D',
+  'X',
+  'B',
+  'N',
+  'J',
+  'Z',
+  'S',
+  'Q',
+  'V',
+  'H',
+  'L',
+  'C',
+  'K',
+  'E',
+  'T',
+];
+
+const DNI = prompt('Introduce tu DNI');
+
+if (DNI.length == 8 && parseInt(DNI) > 0) {
+  let letra = DNI % 23;
+  console.log(`Tu numero de DNI es ${DNI} y la letra es ${letras[letra]}`);
+} else {
+  console.log('Introduce un numero valido');
+} */
 // 9 - Solicitar al usuario una palabra y mostrar por consola el número de consonantes, vocales y longitud de la palabra.
 
+/* const palabra = prompt('Introduce una palabra').toLowerCase();
+
+let vocales = 0;
+let consonantes = 0;
+
+for (const letra of palabra) {
+  if (
+    letra === 'a' ||
+    letra === 'e' ||
+    letra === 'i' ||
+    letra === 'o' ||
+    letra === 'u'
+  ) {
+    vocales++;
+  } else {
+    consonantes++;
+  }
+}
+
+console.log(
+  `La palabra ingresada tiene ${vocales} vocales, ${consonantes} consonantes y tiene ${palabra.length} letras`
+); */
+
 // 10 - Dado un array que contiene ["azul", "amarillo", "rojo", "verde", "rosa"] determinar si un color introducido por el usuario a través de un prompt se encuentra dentro del array o no.
+
+const color = prompt('Introduce un color').toLowerCase();
+const colores = ['azul', 'amarillo', 'rojo', 'verde', 'rosa'];
+
+/* if (colores.indexOf(color) !== -1) {
+  console.log('Tu color esta en el array');  //FORMA 1
+} else {
+  console.log('Tu color no esta en el array');
+} */
+
+if (colores.includes(color)) {
+  console.log('Tu color esta en el array'); //FORMA 2
+} else {
+  console.log('El color no esta en el array');
+}
