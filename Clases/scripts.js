@@ -18,4 +18,4 @@ const marta = new Persona('Marta', 'Perez', 32);
 console.log(juan);
 
 console.log(juan.saludar());
-console.log(marta.saludar());
+console.log(juan.saludar());
