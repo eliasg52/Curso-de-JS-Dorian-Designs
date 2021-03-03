@@ -370,13 +370,23 @@ for (color of colores) {
   }
 } */
 
+//SOLUCION DE DORIAN:
+/* if (colores.indexOf(color) !== -1) {
+  console.log('tu color esta en el array');
+} else {
+  console.log('tu color no esta en el array');
+} */
+
 /* 9 - Solicitar al usuario una palabra y mostrar por consola el número de consonantes, vocales y longitud de la palabra.
  */
 
-let palabra = prompt('introduce una palabra');
+/* let palabra = prompt('introduce una palabra').toLowerCase();
+let palabraSeparada = palabra.split('');
 
+let longitudPalabra = palabra.length;
+let numeroVocales = 0;
+let numeroConsonantes = 0;
 const vocales = ['a', 'e', 'i', 'o', 'u'];
-
 const consonantes = [
   'b',
   'c',
@@ -400,3 +410,80 @@ const consonantes = [
   'y',
   'z',
 ];
+
+for (let i = 0; i < palabraSeparada.length; i++) {
+  for (let j = 0; j < vocales.length; j++) {
+    if (palabraSeparada[i] === vocales[j]) {
+      numeroVocales++;
+    }
+  }
+}
+
+for (let i = 0; i < palabraSeparada.length; i++) {
+  for (let j = 0; j < consonantes.length; j++) {
+    if (palabraSeparada[i] === consonantes[j]) {
+      numeroConsonantes++;
+    }
+  }
+}
+
+console.log(
+  `El numero de consonantes de la palabra es de ${numeroConsonantes}, el numero de vocales es 
+  ${numeroVocales} y su longitud es de ${longitudPalabra}`
+); */
+
+//RESULTADO DE DORIAN:
+/* let consonante = 0;
+let vocales = 0;
+
+for (const letra of palabra) {
+  if (
+    letra == 'a' ||
+    letra == 'e' ||
+    letra == 'i' ||
+    letra == 'o' ||
+    letra == 'u'
+  ) {
+    vocales++;
+  } else {
+    consonantes++;
+  }
+} */
+
+/* 8 - Dado un array de letras, solicita un número de DNI y calcula que letra le corresponde. El número no puede ser
+ negativo ni tener más de 8 dígitos. La posición de la letra es el resultado del módulo del número introducido entre 23
+*/
+
+const letras = [
+  'T',
+  'R',
+  'W',
+  'A',
+  'G',
+  'M',
+  'Y',
+  'F',
+  'P',
+  'D',
+  'X',
+  'B',
+  'N',
+  'J',
+  'Z',
+  'S',
+  'Q',
+  'V',
+  'H',
+  'L',
+  'C',
+  'K',
+  'E',
+  'T',
+];
+
+let dniUsuario = prompt('Introduce tu DNI');
+
+if (dniUsuario.length === 8 && parseInt(dniUsuario) > 0) {
+  let letra = dniUsuario % 23;
+  console.log(`${letras[letra]}`);
+}
