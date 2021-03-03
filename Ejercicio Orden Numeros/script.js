@@ -7,7 +7,31 @@ let c = Number(prompt('Introduce el tercer numero'));
 
 numbers.textContent = `Los numeros introducidos son ${a}, ${b}, ${c}`;
 
-if (a >= b && a >= c) {
+if (a > b && a > c) {
+  if (b > c) {
+    result.textContent = `Los numeros introducidos son ${a}, ${b}, ${c}`;
+  } else {
+    result.textContent = `Los numeros introducidos son ${a}, ${c}, ${b}`;
+  }
+}
+
+if (b > a && b > c) {
+  if (a > c) {
+    result.textContent = `Los numeros introducidos son ${b}, ${a}, ${c}`;
+  } else {
+    result.textContent = `Los numeros introducidos son ${b}, ${c}, ${a}`;
+  }
+}
+
+if (c > a && c > b) {
+  if (b > a) {
+    result.textContent = `Los numeros introducidos son ${c}, ${a}, ${b}`;
+  } else {
+    result.textContent = `Los numeros introducidos son ${c}, ${b}, ${a}`;
+  }
+}
+
+/* if (a >= b && a >= c) {
   if (b >= c) {
     result.textContent = `El orden de los numeros es:${a}, ${b}, ${c}`;
   } else {
@@ -26,3 +50,4 @@ if (a >= b && a >= c) {
     result.textContent = `El orden de los numeros es:${c}, ${b}, ${a}`;
   }
 }
+ */

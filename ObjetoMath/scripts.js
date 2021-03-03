@@ -21,6 +21,8 @@ Métodos:
 
 console.log(Math.E);
 console.log(Math.PI);
+/* console.log(Math.E);
+console.log(Math.PI);
 
 let num = 5.3;
 
@@ -30,14 +32,25 @@ console.log(Math.ceil(num));
 
 console.log(Math.floor(num));
 
-console.log(Math.pow(num, 2));
+console.log(Math.pow(num, 2)); */
 
 /* numero aleatorio entre 1 y 100 */
-console.log(Math.round(Math.random() * 100));
+/* console.log(Math.round(Math.random() * 100)); */
 
 /* formula para generar numeros aleatorios entre un numero y otro */
 /* console.log(Math.random() * (max-min)+min) */
 
-console.log(Math.round(Math.random() * (100 - 50) + 50));
+/* console.log(Math.round(Math.random() * (100 - 50) + 50));
 
 console.log(Math.sign(num));
+ */
+
+let num = 5.3;
+
+console.log(Math.abs(num));
+console.log(Math.ceil(num));
+console.log(Math.floor(num));
+
+console.log(Math.pow(3, 3));
+
+console.log(Math.round(Math.random() * (100 - 50) + 50));

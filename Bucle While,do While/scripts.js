@@ -14,14 +14,16 @@
     }while(condición)
 */
 
-let pass = 'hola';
+let pass = '';
 
-/* while(pass != 'hola'){
-    pass = prompt('Introduzca su contraseña')
+while (pass != 'hola') {
+  pass = prompt('Introduzca su contraseña');
+  console.log('Pass incorrecta');
 }
 
-console.log('Fin del bucle'); */
+console.log('Fin del bucle');
 
-do {
+/* do {
   pass = prompt('Introduzca su contraseña');
 } while (pass != 'hola');
+ */

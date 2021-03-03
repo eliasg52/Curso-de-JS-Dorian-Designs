@@ -5,7 +5,7 @@ let cadena = 'Hola Mundo';
 /*PROPIEDADES
 length -> Devuelve la longitud de la cadena
 */
-
+console.log(cadena.length);
 /*console.log(cadena.length);*/
 
 /*Métodos
@@ -15,11 +15,12 @@ Todos los métodos devuelven una cadena nueva, la cadena original no será modif
 toUpperCase() -> Devuleve la cadena a mayúsculas
 */
 
-/*console.log(cadena.toUpperCase());
+/* console.log(cadena.toUpperCase());
 
 let cadenaMayus = cadena.toUpperCase();
-console.log(cadenaMayus);*/
-
+console.log(cadenaMayus);
+console.log(cadena);
+ */
 /*
 toLowerCase() -> Devuelve la cadena a minúsculas
 */
@@ -30,14 +31,14 @@ toLowerCase() -> Devuelve la cadena a minúsculas
 indexOf(string) -> Devuelve la posición en la que se encuentra el string, si no lo encuentra devuelve -1
 */
 
-/*console.log(cadena.indexOf('o'));
-console.log(cadena.indexOf('Hola'));*/
+/* console.log(cadena.indexOf('o'));
+console.log(cadena.indexOf('Hola')); */
 
 /*
 replace(valor a buscar, valor nuevo) -> Remplaza el fragmento de la cadena que le digamos y pone el valor nuevo
 */
 
-/*console.log(cadena.replace('Mundo','Youtube'));*/
+/* console.log(cadena.replace('Mundo', 'Youtube')); */
 
 /*
 substring(inicio [,fin]) -> Extrae los caracteres desde inicio hasta fin (el final no se incluye)

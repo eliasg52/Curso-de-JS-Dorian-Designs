@@ -32,7 +32,7 @@ switch(evaluación) {
 } 
 */
 
-let num = 2;
+/* let num = 2;
 
 switch (num) {
   case 1:
@@ -57,5 +57,19 @@ switch (num) {
     console.log(`${num} es par`);
     break;
   default:
+    break;
+} */
+
+let num = 2;
+
+switch (num) {
+  case 1:
+    console.log('num vale 1');
+    break;
+  case 2:
+    console.log('num tiene el valor de 2');
+    break;
+  default:
+    console.log('no se el valor de num');
     break;
 }
