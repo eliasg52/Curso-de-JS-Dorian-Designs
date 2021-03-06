@@ -30,12 +30,12 @@ console.log($span.textContent); */
 
 //QUERYSELECTORALL
 
-const $parrafos = document.querySelectorAll('.paragraph');
+/* const $parrafos = document.querySelectorAll('.paragraph');
 
-$parrafos[0].style.color = 'red';
+$parrafos[0].style.color = 'red'; */
 
 //**PASAR UN NODELIST A ARRAY**
-//CON SPREAD OPERATOR
+/* //CON SPREAD OPERATOR
 const $parrafosSpread = [...document.querySelectorAll('.paragraph')];
 
 $parrafosSpread.map((p) => (p.style.color = 'violet')); //PONE EL COLOR DE TODOS LOS PARRAFOS EN VIOLETA
@@ -43,4 +43,22 @@ $parrafosSpread.map((p) => (p.style.color = 'violet')); //PONE EL COLOR DE TODOS
 //CON ARRAY FROM
 const $parrafosArray = Array.from(document.querySelectorAll('.paragraph'));
 
-$parrafosArray.map((p) => (p.style.color = 'yellow')); //PONE EL COLOR DE TODOS LOS PARRAFOS EN AMARILLO
+$parrafosArray.map((p) => (p.style.color = 'yellow')); //PONE EL COLOR DE TODOS LOS PARRAFOS EN AMARILLO */
+
+const $titulo = document.getElementById('title');
+
+console.log($titulo);
+
+const $parrafos = document.querySelectorAll('.paragraph');
+
+console.log($parrafos);
+
+$parrafos[0].style.color = 'red';
+
+const $parrafoSpred = [...document.querySelectorAll('.paragraph')];
+const $parrafoArray = Array.from(document.querySelectorAll('.paragraph'));
+
+/* $parrafos.map((p) => (p.style.color = 'green')); */
+/* $parrafoSpred.map((p) => (p.style.color = 'aqua')); */
+
+$parrafoArray.map((p) => (p.style.color = 'green'));

@@ -14,9 +14,23 @@ Eventos de teclado:
     keypress - cuando pulsamos una tecla y no la soltamos
 */
 
-const $boton = document.getElementById('boton');
+const boton = document.querySelector('#boton');
+const caja = document.querySelector('#box');
+
+function saludar() {
+  console.log('hola forro');
+}
+
+boton.addEventListener('', () => {
+  console.log('asd');
+});
+
+caja.addEventListener('mouseenter', () => {
+  caja.style.background = 'blue';
+});
+/* const $boton = document.getElementById('boton');
 const $caja = document.getElementById('box');
-const $input = document.getElementById('input');
+const $input = document.getElementById('input'); */
 
 /* $boton.addEventListener('click', () => {
   console.log('click');
@@ -36,7 +50,7 @@ $caja.addEventListener('mouseleave', () => {
 });
  */
 
-$caja.addEventListener('mousedown', () => {
+/* $caja.addEventListener('mousedown', () => {
   console.log('pulsaste aca');
 });
 
@@ -58,4 +72,4 @@ $input.addEventListener('keyup', () => {
 
 $input.addEventListener('keypress', () => {
   console.log('presionaste y soltaste una tecla');
-});
+}); */

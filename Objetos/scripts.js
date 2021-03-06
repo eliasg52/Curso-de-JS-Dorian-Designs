@@ -12,7 +12,7 @@ for (const key in persona) {
   console.log(key);
 }
 
-for (const key in persona) {
+for (const key in personaaaaaaaaa) {
   //IMPRIME LOS VALUES (VALORES)
   console.log(persona[key]);
 } */

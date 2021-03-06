@@ -18,7 +18,17 @@ atributos directos
 const titulo = document.getElementById('title');
 const nombre = document.getElementById('name');
 
-// console.log(nombre.getAttribute('type'));
+console.log(titulo);
+console.log(nombre);
+console.log(nombre.getAttribute('id'));
+
+nombre.setAttribute('type', 'number');
+
+titulo.classList.add('main-titulo');
+
+console.dir(titulo);
+
+/* // console.log(nombre.getAttribute('type'));
 // nombre.setAttribute('type', 'number');
 
 titulo.classList.add('nueva-clase', 'otra-clase', 'otra-clase-mas');
@@ -36,4 +46,4 @@ console.log(nombre.value);
 console.log(nombre.value.length);
 
 console.log(titulo);
-console.log(nombre);
+console.log(nombre); */
