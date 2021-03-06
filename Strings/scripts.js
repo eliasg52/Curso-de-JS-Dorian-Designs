@@ -6,7 +6,7 @@ let cadena = 'Hola Mundo';
 length -> Devuelve la longitud de la cadena
 */
 console.log(cadena.length);
-/*console.log(cadena.length);*/
+/*console.log(cadena.length);*a/
 
 /*Métodos
 
