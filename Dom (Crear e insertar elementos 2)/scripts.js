@@ -17,12 +17,13 @@ Insertar y eliminar elementos II
 
     parent.replaceChild(newChild, oldChild) - Reemplaza un hijo por otro
 */
-const list = document.getElementById('list')
-const newElement = document.createElement('li')
-newElement.textContent = "I'm a new element"
+const list = document.getElementById('list');
+const newElement = document.createElement('li');
+newElement.textContent = "I'm a new element";
 
 // list.insertBefore(newElement, list.children[1])
-
+/* list.insertBefore(newElement, list.children[0]); */
+list.children[0].insertAdjacentElement('beforebegin', newElement);
 //list.children[0].insertAdjacentElement('beforebegin',newElement)
 // list.insertAdjacentElement('afterbegin',newElement)
 // list.insertAdjacentElement('beforeend',newElement)
@@ -32,8 +33,6 @@ newElement.textContent = "I'm a new element"
 // list.children[1].insertAdjacentText('afterend', '<li>Elemento con HTML</li>')
 
 //list.replaceChild(newElement,list.children[0])
-
-
 
 /*
     DOM manipulation convenience methods - JQuery Like
@@ -67,4 +66,4 @@ newElement.textContent = "I'm a new element"
 
 //list.remove()
 
-list.removeChild(list.children[1])
+/* list.removeChild(list.children[1]) */
