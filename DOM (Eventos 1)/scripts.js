@@ -16,6 +16,7 @@ Eventos de teclado:
 
 const boton = document.querySelector('#boton');
 const caja = document.querySelector('#box');
+const input = document.querySelector('#input');
 
 function saludar() {
   console.log('hola forro');
@@ -27,6 +28,14 @@ boton.addEventListener('', () => {
 
 caja.addEventListener('mouseenter', () => {
   caja.style.background = 'blue';
+});
+
+input.addEventListener('keydown', () => {
+  console.log('asd');
+});
+
+input.addEventListener('keyup', () => {
+  console.log('qwe');
 });
 /* const $boton = document.getElementById('boton');
 const $caja = document.getElementById('box');
